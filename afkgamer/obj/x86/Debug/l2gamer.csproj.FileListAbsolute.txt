@@ -1,0 +1,34 @@
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\bin\Debug\l2gamer.exe
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\bin\Debug\l2gamer.pdb
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.Properties.Resources.resources
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.exe
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.pdb
+c:\users\гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.Form2.resources
+C:\Users\Гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.KeyTimerPanel.resources
+C:\Users\Гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\bin\Debug\l2gamer.exe.config
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\bin\l2gamer.exe.config
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\bin\l2gamer.exe
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\bin\l2gamer.pdb
+C:\Users\Гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.UcAutoKeys.resources
+C:\Users\Гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.UcWincExtended.resources
+C:\Users\Гурус\documents\visual studio 2010\Projects\l2gamer\l2gamer\obj\x86\Debug\l2gamer.MainForm.resources
+F:\dev\c.net\l2gamer\bin\l2gamer.exe.config
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.exe
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.pdb
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.MainForm.resources
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.KeyTimerPanel.resources
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.UcAutoKeys.resources
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.UcWincExtended.resources
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.Properties.Resources.resources
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\dev\c.net\l2gamer\bin\l2gamer.exe
+F:\dev\c.net\l2gamer\bin\l2gamer.pdb
+F:\dev\c.net\l2gamer\l2gamer\obj\x86\Debug\l2gamer.FormScreenMark.resources
+F:\dev\c.net\afkgamer\bin\l2gamer.exe.config
+F:\dev\c.net\afkgamer\l2gamer\obj\x86\Debug\l2gamer.exe
+F:\dev\c.net\afkgamer\l2gamer\obj\x86\Debug\l2gamer.pdb

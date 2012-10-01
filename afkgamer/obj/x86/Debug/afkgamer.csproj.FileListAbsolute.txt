@@ -1,0 +1,3 @@
+F:\dev\c.net\afkgamer\bin\l2gamer.exe.config
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.exe
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.pdb

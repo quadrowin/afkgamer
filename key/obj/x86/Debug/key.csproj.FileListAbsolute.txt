@@ -1,0 +1,6 @@
+F:\dev\c.net\l2gamer\bin\key.exe
+F:\dev\c.net\l2gamer\bin\key.pdb
+F:\dev\c.net\l2gamer\key\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\l2gamer\key\obj\x86\Debug\key.exe
+F:\dev\c.net\l2gamer\key\obj\x86\Debug\key.pdb
+F:\dev\c.net\l2gamer\bin\Program.cs

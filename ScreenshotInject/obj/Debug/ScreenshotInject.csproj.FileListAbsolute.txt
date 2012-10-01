@@ -1,0 +1,15 @@
+C:\dev\c.net\Direct3DHook\bin\ScreenshotInject.dll
+C:\dev\c.net\Direct3DHook\bin\ScreenshotInject.pdb
+C:\dev\c.net\Direct3DHook\ScreenshotInject\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\c.net\Direct3DHook\ScreenshotInject\obj\Debug\ScreenshotInject.dll
+C:\dev\c.net\Direct3DHook\ScreenshotInject\obj\Debug\ScreenshotInject.pdb
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\ScreenshotInject\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.pdb
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\bin\ScreenshotInject.dll
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\bin\ScreenshotInject.pdb
+C:\Users\Гурус\Documents\Visual Studio 2010\Projects\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.dll
+F:\dev\c.net\l2gamer\bin\ScreenshotInject.dll
+F:\dev\c.net\l2gamer\bin\ScreenshotInject.pdb
+F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.dll
+F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.pdb
