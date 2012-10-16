@@ -1,0 +1,9 @@
+F:\dev\c.net\afkgamer\DetectionTest\bin\Debug\DetectionTest.exe
+F:\dev\c.net\afkgamer\DetectionTest\bin\Debug\DetectionTest.pdb
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\DetectionTest.MainForm.resources
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\DetectionTest.Properties.Resources.resources
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\DetectionTest.exe
+F:\dev\c.net\afkgamer\DetectionTest\obj\x86\Debug\DetectionTest.pdb

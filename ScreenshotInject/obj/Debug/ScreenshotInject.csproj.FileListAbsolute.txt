@@ -13,3 +13,8 @@ F:\dev\c.net\l2gamer\bin\ScreenshotInject.pdb
 F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ResolveAssemblyReference.cache
 F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.dll
 F:\dev\c.net\l2gamer\ScreenshotInject\obj\Debug\ScreenshotInject.pdb
+F:\dev\c.net\afkgamer\bin\ScreenshotInject.dll
+F:\dev\c.net\afkgamer\bin\ScreenshotInject.pdb
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\ScreenshotInject.dll
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\ScreenshotInject.pdb

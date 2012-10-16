@@ -8,6 +8,10 @@ using System.Xml.XPath;
 
 namespace l2gamer
 {
+
+	/// <summary>
+	/// 
+	/// </summary>
 	public class MdlControlOwner
 	{
 

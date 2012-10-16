@@ -38,10 +38,8 @@
 			this.tmrUpdateState = new System.Windows.Forms.Timer(this.components);
 			this.tcWindow = new System.Windows.Forms.TabControl();
 			this.tpAutoKeys = new System.Windows.Forms.TabPage();
-			this.tpProgressBinding = new System.Windows.Forms.TabPage();
 			this.tpScreenshot = new System.Windows.Forms.TabPage();
-			this.pbDebugScreen = new System.Windows.Forms.PictureBox();
-			this.cbDebugScreen = new System.Windows.Forms.CheckBox();
+			this.tpProgressBinding = new System.Windows.Forms.TabPage();
 			this.tpMouseMacros = new System.Windows.Forms.TabPage();
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -56,8 +54,6 @@
 			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
 			this.tcWindow.SuspendLayout();
-			this.tpScreenshot.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbDebugScreen)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -116,7 +112,7 @@
 			this.tbWindowFilter.Name = "tbWindowFilter";
 			this.tbWindowFilter.Size = new System.Drawing.Size(127, 20);
 			this.tbWindowFilter.TabIndex = 2;
-			this.tbWindowFilter.Text = "ineage";
+			this.tbWindowFilter.Text = "PotPlayer";
 			// 
 			// btnRefresh
 			// 
@@ -138,8 +134,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.tcWindow.Controls.Add(this.tpAutoKeys);
-			this.tcWindow.Controls.Add(this.tpProgressBinding);
 			this.tcWindow.Controls.Add(this.tpScreenshot);
+			this.tcWindow.Controls.Add(this.tpProgressBinding);
 			this.tcWindow.Controls.Add(this.tpMouseMacros);
 			this.tcWindow.Location = new System.Drawing.Point(224, 40);
 			this.tcWindow.Name = "tcWindow";
@@ -157,6 +153,16 @@
 			this.tpAutoKeys.TabIndex = 0;
 			this.tpAutoKeys.Text = "clicker";
 			// 
+			// tpScreenshot
+			// 
+			this.tpScreenshot.Location = new System.Drawing.Point(4, 22);
+			this.tpScreenshot.Name = "tpScreenshot";
+			this.tpScreenshot.Padding = new System.Windows.Forms.Padding(3);
+			this.tpScreenshot.Size = new System.Drawing.Size(480, 530);
+			this.tpScreenshot.TabIndex = 2;
+			this.tpScreenshot.Text = "Screenshot";
+			this.tpScreenshot.UseVisualStyleBackColor = true;
+			// 
 			// tpProgressBinding
 			// 
 			this.tpProgressBinding.Location = new System.Drawing.Point(4, 22);
@@ -166,40 +172,6 @@
 			this.tpProgressBinding.TabIndex = 1;
 			this.tpProgressBinding.Text = "extended";
 			this.tpProgressBinding.UseVisualStyleBackColor = true;
-			// 
-			// tpScreenshot
-			// 
-			this.tpScreenshot.Controls.Add(this.pbDebugScreen);
-			this.tpScreenshot.Controls.Add(this.cbDebugScreen);
-			this.tpScreenshot.Location = new System.Drawing.Point(4, 22);
-			this.tpScreenshot.Name = "tpScreenshot";
-			this.tpScreenshot.Padding = new System.Windows.Forms.Padding(3);
-			this.tpScreenshot.Size = new System.Drawing.Size(480, 530);
-			this.tpScreenshot.TabIndex = 2;
-			this.tpScreenshot.Text = "Screenshot";
-			this.tpScreenshot.UseVisualStyleBackColor = true;
-			// 
-			// pbDebugScreen
-			// 
-			this.pbDebugScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.pbDebugScreen.Location = new System.Drawing.Point(10, 30);
-			this.pbDebugScreen.Name = "pbDebugScreen";
-			this.pbDebugScreen.Size = new System.Drawing.Size(462, 210);
-			this.pbDebugScreen.TabIndex = 11;
-			this.pbDebugScreen.TabStop = false;
-			// 
-			// cbDebugScreen
-			// 
-			this.cbDebugScreen.AutoSize = true;
-			this.cbDebugScreen.Location = new System.Drawing.Point(10, 7);
-			this.cbDebugScreen.Name = "cbDebugScreen";
-			this.cbDebugScreen.Size = new System.Drawing.Size(73, 17);
-			this.cbDebugScreen.TabIndex = 10;
-			this.cbDebugScreen.Text = "hp screen";
-			this.cbDebugScreen.UseVisualStyleBackColor = true;
-			this.cbDebugScreen.Click += new System.EventHandler(this.cbDebugScreen_Click);
 			// 
 			// tpMouseMacros
 			// 
@@ -267,6 +239,7 @@
 			this.menuStrip1.Size = new System.Drawing.Size(714, 24);
 			this.menuStrip1.TabIndex = 6;
 			this.menuStrip1.Text = "menuStrip1";
+			this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
 			// 
 			// toolStripMenuItem1
 			// 
@@ -279,6 +252,8 @@
 			// 
 			// toolStripMenuItem2
 			// 
+			this.toolStripMenuItem2.Checked = true;
+			this.toolStripMenuItem2.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
 			this.toolStripMenuItem2.Size = new System.Drawing.Size(250, 22);
 			this.toolStripMenuItem2.Text = "simple (fast, but detectable)";
@@ -286,8 +261,6 @@
 			// 
 			// toolStripMenuItem3
 			// 
-			this.toolStripMenuItem3.Checked = true;
-			this.toolStripMenuItem3.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.toolStripMenuItem3.Name = "toolStripMenuItem3";
 			this.toolStripMenuItem3.Size = new System.Drawing.Size(250, 22);
 			this.toolStripMenuItem3.Text = "extended (very slow, but security)";
@@ -305,14 +278,11 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "MainForm";
-			this.Text = "l2gamer";
+			this.Text = "afkgamer";
 			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.tcWindow.ResumeLayout(false);
-			this.tpScreenshot.ResumeLayout(false);
-			this.tpScreenshot.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbDebugScreen)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
@@ -333,8 +303,6 @@
 		private System.Windows.Forms.TabPage tpAutoKeys;
 		private System.Windows.Forms.TabPage tpProgressBinding;
 		private System.Windows.Forms.TabPage tpScreenshot;
-		private System.Windows.Forms.PictureBox pbDebugScreen;
-		private System.Windows.Forms.CheckBox cbDebugScreen;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
 		private System.Windows.Forms.Button btnSave;

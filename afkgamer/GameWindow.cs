@@ -32,6 +32,11 @@ namespace l2gamer
 			get { return (MdlAutoKeys)Controls[0]; }
 		}
 
+		public MdlScreenshot MdlScreenshot
+		{
+			get { return (MdlScreenshot)Controls[1]; }
+		}
+
 		/// <summary>
 		/// Подгон размеров контролов
 		/// </summary>
@@ -82,8 +87,9 @@ namespace l2gamer
 			this.parentControl = parentControl;
 			controls = new List<MdlControlOwner>();
 			controls.Add(new MdlAutoKeys(this, parentControl.TabPages[0]));
-			controls.Add(new MdlControlOwner(this, null));
-			//controls.Add(new MdlProgressBindings(this, parentControl.TabPages[1]));
+			controls.Add(new MdlScreenshot(this, parentControl.TabPages[1]));
+			//controls.Add(new MdlControlOwner(this, null));
+			//controls.Add(new MdlProgressBindings(this, parentControl.TabPages[2]));
 			foreach (MdlControlOwner control in controls)
 			{
 				control.Init();
@@ -143,7 +149,7 @@ namespace l2gamer
 		/// </summary>
 		public MdlProgressBindings ProgressBindings
 		{
-			get { return (MdlProgressBindings)Controls[1]; }
+			get { return null; }// (MdlProgressBindings)Controls[2]; }
 		}
 
 		/// <summary>

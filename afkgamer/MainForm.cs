@@ -34,8 +34,6 @@ namespace l2gamer
 		/// </summary>
 		public static List<GameWindow> Windows;
 
-		private bool inDebugScreenUpdate = false;
-
 		/// <summary>
 		/// Выбранное окно
 		/// </summary>
@@ -157,60 +155,62 @@ namespace l2gamer
 		{
 			//TempScreen = Direct3DCapture.CaptureWindow (new IntPtr (window.HWnd));
 			//TempScreen = new Bitmap (WindowImageCapture.CaptureWindow (new IntPtr (window.HWnd)));
-			using (BitmapDecorator deco = new BitmapDecorator(window.ProgressBindings.Screenshot))
-			{
-				foreach (L2ProgressInfo progress in window.ProgressBindings.Progresses)
-				{
-					if (!progress.IsEmpty())
-					{
-						int x = progress.X2;
-						Color pixel = deco.GetPixel(x, progress.Y1);
 
-						while (x > progress.X1 && !progress.IsHpColor(pixel))
-						{
-							if (cbDebugScreen.Checked && !inDebugScreenUpdate)
-							{
-								TempBmp.SetPixel(x, 0, deco.GetPixel(x, progress.Y1 - 2));
-								TempBmp.SetPixel(x, 1, deco.GetPixel(x, progress.Y1 - 1));
-								TempBmp.SetPixel(x, 2, pixel);
-								TempBmp.SetPixel(x, 3, deco.GetPixel(x, progress.Y1 + 1));
-								TempBmp.SetPixel(x, 4, deco.GetPixel(x, progress.Y1 + 2));
-							}
-							x--;
-							pixel = deco.GetPixel(x, progress.Y1);
-						}
 
-						if (cbDebugScreen.Checked && !inDebugScreenUpdate)
-						{
-							inDebugScreenUpdate = true;
-							TempBmp.SetPixel(x - 1, 0, Color.White);
-							TempBmp.SetPixel(x - 1, 1, Color.White);
-							TempBmp.SetPixel(x - 1, 2, Color.White);
-							TempBmp.SetPixel(x - 1, 3, Color.White);
-							TempBmp.SetPixel(x - 1, 4, Color.White);
+			//using (BitmapDecorator deco = new BitmapDecorator(window.ProgressBindings.Screenshot))
+			//{
+			//    foreach (L2ProgressInfo progress in window.ProgressBindings.Progresses)
+			//    {
+			//        if (!progress.IsEmpty())
+			//        {
+			//            int x = progress.X2;
+			//            Color pixel = deco.GetPixel(x, progress.Y1);
 
-							pbDebugScreen.Invoke(new MethodInvoker(
-								delegate()
-								{
-									if (pbDebugScreen.Image != TempBmp)
-									{
-										pbDebugScreen.Image = TempBmp;
-									}
-									else
-									{
-										pbDebugScreen.Invalidate();
-									}
-								}
-							));
-						}
+			//            while (x > progress.X1 && !progress.IsHpColor(pixel))
+			//            {
+			//                if (cbDebugScreen.Checked && !inDebugScreenUpdate)
+			//                {
+			//                    TempBmp.SetPixel(x, 0, deco.GetPixel(x, progress.Y1 - 2));
+			//                    TempBmp.SetPixel(x, 1, deco.GetPixel(x, progress.Y1 - 1));
+			//                    TempBmp.SetPixel(x, 2, pixel);
+			//                    TempBmp.SetPixel(x, 3, deco.GetPixel(x, progress.Y1 + 1));
+			//                    TempBmp.SetPixel(x, 4, deco.GetPixel(x, progress.Y1 + 2));
+			//                }
+			//                x--;
+			//                pixel = deco.GetPixel(x, progress.Y1);
+			//            }
 
-						progress.Hp =
-							progress.X2 > progress.X1 ?
-							(100 * (x - progress.X1) / (progress.X2 - progress.X1)) :
-							0;
-					}
-				}
-			}
+			//            if (cbDebugScreen.Checked && !inDebugScreenUpdate)
+			//            {
+			//                inDebugScreenUpdate = true;
+			//                TempBmp.SetPixel(x - 1, 0, Color.White);
+			//                TempBmp.SetPixel(x - 1, 1, Color.White);
+			//                TempBmp.SetPixel(x - 1, 2, Color.White);
+			//                TempBmp.SetPixel(x - 1, 3, Color.White);
+			//                TempBmp.SetPixel(x - 1, 4, Color.White);
+
+			//                pbDebugScreen.Invoke(new MethodInvoker(
+			//                    delegate()
+			//                    {
+			//                        if (pbDebugScreen.Image != TempBmp)
+			//                        {
+			//                            pbDebugScreen.Image = TempBmp;
+			//                        }
+			//                        else
+			//                        {
+			//                            pbDebugScreen.Invalidate();
+			//                        }
+			//                    }
+			//                ));
+			//            }
+
+			//            progress.Hp =
+			//                progress.X2 > progress.X1 ?
+			//                (100 * (x - progress.X1) / (progress.X2 - progress.X1)) :
+			//                0;
+			//        }
+			//    }
+			//}
 		}
 
 		private void tmrUpdateState_Tick(object sender, EventArgs e)
@@ -280,18 +280,13 @@ namespace l2gamer
 			return ((HiWord << 16) | (LoWord & 0xffff));
 		}
 
-		private void pbDebugScreen_Paint(object sender, PaintEventArgs e)
-		{
-			inDebugScreenUpdate = false;
-		}
-
 		private void MainForm_Load(object sender, EventArgs e)
 		{
 			RefreshCharactersList();
 			lvWindows.Items.Clear();
-			while (tcWindow.TabCount > 1)
+			while (tcWindow.TabCount > 2)
 			{
-				tcWindow.TabPages.RemoveAt(1);
+				tcWindow.TabPages.RemoveAt(2);
 			}
 			btnRefresh_Click(sender, e);
 			tmrUpdateState.Enabled = true;
@@ -300,15 +295,6 @@ namespace l2gamer
 		private void lvWindows_DoubleClick(object sender, EventArgs e)
 		{
 
-		}
-
-		private void cbDebugScreen_Click(object sender, EventArgs e)
-		{
-			if (activeWindow != null && cbDebugScreen.Checked)
-			{
-				//activeWindow.ProgressBindings.ScreenshotUpdate += L2Window_ScreenshotUpdate;
-				//activeWindow.ProgressBindings.RefreshScreenshot();
-			}
 		}
 
 		private void tbCharacter_TextChanged(object sender, EventArgs e)
@@ -385,9 +371,13 @@ namespace l2gamer
 			if (e.ColumnIndex == 0)
 			{
 				if (e.Item.Checked)
+				{
 					ControlPaint.DrawCheckBox(e.Graphics, e.Bounds.X + 1, e.Bounds.Top + 1, 14, 14, ButtonState.Normal | ButtonState.Checked);
+				}
 				else
+				{
 					ControlPaint.DrawCheckBox(e.Graphics, e.Bounds.X + 1, e.Bounds.Top + 1, 14, 14, ButtonState.Normal);
+				}
 
 				e.Graphics.DrawString(
 					e.Item.Text,
@@ -463,6 +453,16 @@ namespace l2gamer
 			L2gConfig.getInstance().ClickType = L2gConfig.CLICKTYPE_POST_MESSAGE;
 			toolStripMenuItem2.Checked = true;
 			toolStripMenuItem3.Checked = false;
+		}
+
+		private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+		{
+
+		}
+
+		private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+		{
+
 		}
 
 	}

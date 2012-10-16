@@ -40,14 +40,14 @@ namespace ScreenshotInject
         protected void DebugMessage(string message)
         {
 #if DEBUG
-            try
-            {
-                Interface.OnDebugMessage(this.ProcessId, HookName + ": " + message);
-            }
-            catch (RemotingException re)
-            {
-                // Ignore remoting exceptions
-            }
+			try
+			{
+				Interface.OnDebugMessage(this.ProcessId, HookName + ": " + message);
+			}
+			catch
+			{
+				// Ignore remoting exceptions
+			}
 #endif
         }
 
@@ -119,7 +119,7 @@ namespace ScreenshotInject
                 // Send the buffer back to the host process
                 Interface.OnScreenshotResponse(RemoteHooking.GetCurrentProcessId(), requestId, bitmapData);
             }
-            catch (RemotingException re)
+            catch
             {
                 // Ignore remoting exceptions
                 // .NET Remoting will throw an exception if the host application is unreachable

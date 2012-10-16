@@ -1,3 +1,15 @@
 F:\dev\c.net\afkgamer\bin\l2gamer.exe.config
 F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.exe
 F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.pdb
+F:\dev\c.net\afkgamer\bin\l2gamer.exe
+F:\dev\c.net\afkgamer\bin\l2gamer.pdb
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.MainForm.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.FormScreenMark.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.KeyTimerPanel.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.UcAutoKeys.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.UcWincExtended.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.Properties.Resources.resources
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\dev\c.net\afkgamer\afkgamer\obj\x86\Debug\l2gamer.UcDebugScreenshot.resources

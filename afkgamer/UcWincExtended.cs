@@ -44,6 +44,11 @@ namespace l2gamer
 
 			InitializeComponent();
 
+			if (ProgressBindings == null)
+			{
+				return;
+			}
+
 			ProgressBindings.Progresses[(int)L2ObjectStateType.SelfCp].StateLabel = lbSelfCp;
 			ProgressBindings.Progresses[(int)L2ObjectStateType.SelfHp].StateLabel = lbSelfHp;
 			ProgressBindings.Progresses[(int)L2ObjectStateType.SelfMp].StateLabel = lbSelfMp;

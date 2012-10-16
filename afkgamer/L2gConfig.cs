@@ -14,7 +14,7 @@ namespace l2gamer
 
 		protected static L2gConfig instance;
 
-		protected string clickType = "ShellExecute";
+		protected string clickType = "PostMessage";
 
 		/// <summary>
 		/// Тип эмуляции клика

@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BitmapDecorator.cs" />
+    <Compile Include="MdlScreenshot.cs" />
     <Compile Include="GameWindow.cs" />
     <Compile Include="InputBox.cs" />
     <Compile Include="L2gConfig.cs" />
@@ -89,11 +90,11 @@
     <Compile Include="L2Key.cs" />
     <Compile Include="L2KeyEmulating.cs" />
     <Compile Include="L2ObjectStateType.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormScreenMark.cs">
       <SubType>Form</SubType>
@@ -108,17 +109,23 @@
     <Compile Include="L2ProgressInfo.cs" />
     <Compile Include="MdlControlOwner.cs" />
     <Compile Include="MdlProgressBindings.cs" />
-    <Compile Include="WincAutoKeys.cs">
+    <Compile Include="UcDebugScreenshot.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>WincAutoKeys.cs</DependentUpon>
+    <Compile Include="UcDebugScreenshot.Designer.cs">
+      <DependentUpon>UcDebugScreenshot.cs</DependentUpon>
     </Compile>
-    <Compile Include="WincExtended.cs">
+    <Compile Include="UcWincAutoKeys.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WincExtended.Designer.cs">
-      <DependentUpon>WincExtended.cs</DependentUpon>
+    <Compile Include="UcWincAutoKeys.Designer.cs">
+      <DependentUpon>UcWincAutoKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcWincExtended.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcWincExtended.Designer.cs">
+      <DependentUpon>UcWincExtended.cs</DependentUpon>
     </Compile>
     <Compile Include="L2Worker.cs" />
     <Compile Include="NativeMethods.cs" />
@@ -127,8 +134,8 @@
     <Compile Include="ScreenCapture.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="WindowImageCapture.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormScreenMark.resx">
       <DependentUpon>FormScreenMark.cs</DependentUpon>
@@ -136,11 +143,14 @@
     <EmbeddedResource Include="KeyTimerPanel.resx">
       <DependentUpon>KeyTimerPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WincAutoKeys.resx">
-      <DependentUpon>WincAutoKeys.cs</DependentUpon>
+    <EmbeddedResource Include="UcDebugScreenshot.resx">
+      <DependentUpon>UcDebugScreenshot.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WincExtended.resx">
-      <DependentUpon>WincExtended.cs</DependentUpon>
+    <EmbeddedResource Include="UcWincAutoKeys.resx">
+      <DependentUpon>UcWincAutoKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcWincExtended.resx">
+      <DependentUpon>UcWincExtended.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,11 +163,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
-    <None Include="ClassDiagram3.cd" />
-    <None Include="ClassDiagram4.cd" />
-    <None Include="ClassDiagram5.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

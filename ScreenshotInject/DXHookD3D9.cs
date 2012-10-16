@@ -263,7 +263,7 @@ namespace ScreenshotInject
                     if (_lastRequestTime != null && _lineVectors != null)
                     {
                         TimeSpan timeSinceRequest = DateTime.Now - _lastRequestTime.Value;
-                        if (timeSinceRequest.TotalMilliseconds < 1000.0)
+                        if (false && timeSinceRequest.TotalMilliseconds < 1000.0)
                         {
                             using (Line line = new Line(device))
                             {
@@ -285,7 +285,7 @@ namespace ScreenshotInject
                     #region Draw frame rate
                     using (SlimDX.Direct3D9.Font font = new SlimDX.Direct3D9.Font(device, new System.Drawing.Font("Times New Roman", 16.0f)))
                     {
-                        if (_lastFrame != null)
+                        if (false && _lastFrame != null)
                         {
                             font.DrawString(null, String.Format("{0:N1} fps", (1000.0 / (DateTime.Now - _lastFrame.Value).TotalMilliseconds)), 100, 100, System.Drawing.Color.Red);
                         }
