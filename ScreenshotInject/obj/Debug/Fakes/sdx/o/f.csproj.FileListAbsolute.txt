@@ -1,0 +1,10 @@
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.4.0.13.43.Fakes.xml
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.4.0.13.43.Fakes.dll
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.4.0.13.43.Fakes.pdb
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\Microsoft.QualityTools.Testing.Fakes.dll
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.dll
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.pdb
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\b\SlimDX.xml
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\o\f.csprojResolveAssemblyReference.cache
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\o\SlimDX.4.0.13.43.Fakes.dll
+F:\dev\c.net\afkgamer\ScreenshotInject\obj\Debug\Fakes\sdx\o\SlimDX.4.0.13.43.Fakes.pdb
