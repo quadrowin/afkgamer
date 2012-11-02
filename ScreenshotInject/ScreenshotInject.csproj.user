@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
-    <StartAction>Program</StartAction>
+    <StartAction>Project</StartAction>
     <StartProgram>C:\Projects\JDev\NetFX2.0\CSharp\Blog\ScreenCapture\Direct3D9Hook_Updated\bin\CubeMapGS.exe</StartProgram>
   </PropertyGroup>
   <PropertyGroup>

@@ -118,7 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="diablo_drop_mask3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_drop_mask3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diablo_drop_mask1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_drop_mask1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diablo_drop_sample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_drop_sample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diablo_players_sample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_players_sample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diablo_drop_mask2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_drop_mask2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Screenshot003" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot003.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diablo_gold_mask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diablo_gold_mask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

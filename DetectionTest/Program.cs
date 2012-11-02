@@ -15,7 +15,10 @@ namespace DetectionTest
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+			NativeMethods.AllocConsole();
+			Console.WriteLine("Debug Console");
 			Application.Run(new MainForm());
+			NativeMethods.FreeConsole();
 		}
 	}
 }
